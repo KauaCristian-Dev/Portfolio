@@ -20,16 +20,6 @@ header{
     position: relative;
 }
 
-/* estilo do corpo */
-section.topo-site{
-    padding: 40px 4%;
-
-}
-
-.flex{
-    display: flex;
-}
-
 .nav-button{
     color: #ffffff62;
     display: inline-block;
@@ -41,10 +31,24 @@ section.topo-site{
     cursor: pointer;
 }
 
+/* estilo do corpo */
+section.topo-site{
+    padding: 40px 4%;
+
+}
+
+.flex{
+    display: flex;
+    height: 85vh;
+    width: 100%;
+}
+
 .texto-topo-inicio{
     background-color: rgb(167, 137, 137);
+    width: 50%;
 }
 
 .img-topo{
     background-color: bisque;
+    width: 50%;
 }
