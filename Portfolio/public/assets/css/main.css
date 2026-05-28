@@ -30,25 +30,27 @@ header{
     color:rgb(255, 255, 255);
     cursor: pointer;
 }
+/* fim do cabeçalho */
 
-/* estilo do corpo */
-section.topo-site{
-    padding: 40px 4%;
-
-}
-
-.flex{
-    display: flex;
-    height: 85vh;
-    width: 100%;
-}
-
+/* estilo do topo do site*/
 .texto-topo-inicio{
     background-color: rgb(167, 137, 137);
     width: 50%;
 }
 
 .img-topo{
+    background-color: bisque;
+    width: 50%;
+}
+
+/* estilo do corpo do meio do site */
+
+.texto-meio-inicio{
+    background-color: rgb(167, 137, 137);
+    width: 50%;
+}
+
+.img-meio{
     background-color: bisque;
     width: 50%;
 }
