@@ -2,9 +2,10 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./Portfolio/src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./Portfolio/src/server.js",
+    "dev": "node --watch ./Portfolio/src/server.js"
   },
   "repository": {
     "type": "git",
