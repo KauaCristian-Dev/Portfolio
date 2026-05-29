@@ -1,0 +1,12 @@
+/* estilos que podem ser usados em outros lugares */
+section.site{
+    padding: 40px 4%;
+
+}
+
+.flex{
+    display: flex;
+    height: 85vh;
+    width: 100%;
+    align-items: center;
+}
