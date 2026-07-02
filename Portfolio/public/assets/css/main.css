@@ -2,12 +2,15 @@
     box-sizing:  border-box;
     margin: 0;
     padding: 0;
+    
 }
 /* estilo geral */
 body{
     background-color: rgb(45, 5, 99);
-    width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-image: url('../img/fundo\ ondas.gif');
+    background-repeat: no-repeat;
+    background-size: cover
 }
 
 /* estiolo do cabeçalho */
@@ -15,70 +18,55 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(123, 30, 209, 0.884);
+    color: #ffffff;
+    background-color: rgba(123, 30, 209, 0.425);
     padding: 20px 15px;
-    height: 20px;
-    width: 100%;
-    position: fixed;
+    height: 30px;
+    width: 90%;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 15px;
     z-index: 9999;
+    border-radius: 25px;
 }
 
 .nav-button{
-    color: #ffffff62;
+    color: #ffffff;
     display: inline-block;
     padding: 15px;
 }
 
 .nav-button:hover{
-    color:rgb(255, 255, 255);
+    color:rgb(191, 127, 216);
     cursor: pointer;
 }
 /* fim do cabeçalho */
 
-<<<<<<< HEAD
 /* estilo do topo do site*/
-.texto-topo-inicio{
-=======
-/* estilo do corpo superior */
+.flex{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.section-home{
+    height: 100vh;
+}
+
 .text-inicio{
-    background-color: rgb(167, 137, 137);
-    width: 50%;
-    height: 50%;
-    justify-content: center;
-    position: relative;
-    padding: 20px;
-}
-
-.text-inicio h1{
-    font-size: 35px;
-    color: rgb(255, 255, 255);
-}
-
-.text-inicio p{
-    font-size: 25px;
-    color: rgb(255, 255, 255);
+    background-color: #49225b98;
+    color: #ffffff;
+    backdrop-filter: blur(15px);
+    width: 600px;
+    height: 400px;
+    margin: 80px;
+    border-radius: 25px;
 }
 
 .img-top{
-    background-color: bisque;
-    width: 50%;
-    height: 50%;
-}
-/* fim do estilo superior */
-
-/* estilo do corpo central */
-.text-center{
->>>>>>> 3ea087eba341ac59106725520a64572f038d4e65
-    background-color: rgb(167, 137, 137);
-    width: 50%;
+    margin: 80px;
 }
 
-.img-center{
-    background-color: bisque;
-    width: 50%;
-}
-
-<<<<<<< HEAD
 /* estilo do corpo do meio do site */
 
 .texto-meio-inicio{
@@ -90,14 +78,3 @@ header{
     background-color: bisque;
     width: 50%;
 }
-=======
-/* fim do estilo central */
-
-/* estilo do corpo inferior */
-.text-end{
-    background-color: rgb(167, 137, 137);
-    width: 100%;
-}
-
-/* fim do estilo inferior */
->>>>>>> 3ea087eba341ac59106725520a64572f038d4e65
