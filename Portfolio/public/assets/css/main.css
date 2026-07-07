@@ -28,6 +28,7 @@ header{
     margin-top: 15px;
     z-index: 9999;
     border-radius: 25px;
+    position: fixed;
 }
 
 .nav-button{
@@ -45,7 +46,7 @@ header{
 /* estilo do topo do site*/
 .flex{
     display: flex;
-    height: 100vh;
+    height: 100%;
     align-items: center;
 }
 
@@ -59,12 +60,33 @@ header{
     backdrop-filter: blur(15px);
     width: 600px;
     height: 400px;
-    margin: 80px;
+    margin: 100px;
+    margin-right: 120px;
+    margin-left: 200px;
+    padding: 20px;
     border-radius: 25px;
 }
 
+.text-inicio h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+.text-inicio p{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.text-inicio span{
+    letter-spacing: 5px;
+    color: #A56ABD;
+}
+
 .img-top{
-    margin: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+    padding-left: 45px;
 }
 
 /* estilo do corpo do meio do site */
