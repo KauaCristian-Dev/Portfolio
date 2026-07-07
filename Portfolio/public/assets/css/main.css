@@ -2,7 +2,10 @@
     box-sizing:  border-box;
     margin: 0;
     padding: 0;
-    
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /* estilo geral */
 body{
@@ -37,8 +40,17 @@ header{
     padding: 15px;
 }
 
-.nav-button:hover{
+.nav-button a{
+    color: #ffffff;
+    display: inline-block;
+    padding: 15px;
+}
+
+.nav-button a:hover{
     color:rgb(191, 127, 216);
+    transform: translateY(-3px);
+    font-size: 17px;
+    transition: 0.5s ;
     cursor: pointer;
 }
 /* fim do cabeçalho */
@@ -74,12 +86,22 @@ header{
 
 .text-inicio p{
     font-size: 25px;
+    height: 250px;
+    border-radius: 25px;
     margin-top: 20px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-top: 25px;
+    background-color: #1f012c00;
+    backdrop-filter: blur(0.5px);
 }
 
 .text-inicio span{
     letter-spacing: 5px;
     color: #A56ABD;
+    display: inline-block;
+    animation: subirDescer 1.5s ease-in-out infinite alternate;
+    animation-delay: calc(var(--i) * 0.5s);
 }
 
 .img-top{
@@ -89,9 +111,36 @@ header{
     padding-left: 45px;
 }
 
-/* estilo do corpo do meio do site */
+@keyframes subirDescer{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
 
-.texto-meio-inicio{
+/* fim da estilizaçao da home */
+/* começo da estilizadçao do abount */
+
+.section-abount{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.flex-abount{
+    background-color: #49225b98;
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    display: flex;
+    height: 90%;
+    width: 95%;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.text-abount{
     background-color: rgb(167, 137, 137);
     width: 50%;
 }
@@ -99,4 +148,25 @@ header{
 .img-meio{
     background-color: bisque;
     width: 50%;
+}
+
+/* fim da estilizaçao do abount */
+/* inicio estilizaçao projects */
+
+.section-projects{
+    background-image: url('../img/fundo\ ondas.gif');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* fim estilizaçao projects */
+/* inicio da estilizaçao do  */
+
+.section-contact{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
 }
