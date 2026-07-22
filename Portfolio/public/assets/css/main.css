@@ -9,10 +9,9 @@ html {
 }
 /* estilo geral */
 body{
-    background-color: rgb(45, 5, 99);
+    /* background-color: rgb(45, 5, 99); */
     height: 100vh;
     background-image: url('../img/fundo\ ondas.gif');
-    background-repeat: no-repeat;
     background-size: cover
 }
 
@@ -137,26 +136,50 @@ header{
     height: 90%;
     width: 95%;
     margin-top: 60px;
-    align-items: center;
+    align-items: top;
+    padding: 25px;
 }
 
 .text-abount{
     background-color: rgb(167, 137, 137);
+    height: 350px;
     width: 50%;
+    border-radius: 25px;
+
 }
 
+.text-abount p{
+    font-size: 25px;
+}
+
+.text-abount h1{
+    text-align: center;
+}
 .img-meio{
     background-color: bisque;
     width: 50%;
+}
+
+.text-abount span{
+    letter-spacing: 5px;
+    display: inline-block;
+    animation: subirDescer 1.5s ease-in-out infinite alternate;
+    animation-delay: calc(var(--i) * 0.5s);
+}
+
+@keyframes subirDescer{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
 }
 
 /* fim da estilizaçao do abount */
 /* inicio estilizaçao projects */
 
 .section-projects{
-    background-image: url('../img/fundo\ ondas.gif');
-    /* background-repeat: no-repeat; */
-    background-size: cover;
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -166,6 +189,7 @@ header{
 /* inicio da estilizaçao do  */
 
 .section-contact{
+    background-color:rgb(167, 137, 137);
     display: flex;
     justify-content: center;
     height: 100vh;
