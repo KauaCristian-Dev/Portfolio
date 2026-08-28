@@ -141,15 +141,18 @@ header{
 }
 
 .text-abount{
-    background-color: rgb(167, 137, 137);
-    height: 350px;
+    background-color: #49225b98;
+    backdrop-filter: blur(15px);
+    height: 27rem;
     width: 50%;
+    padding: 8px;
     border-radius: 25px;
 
 }
 
 .text-abount p{
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 23px;
 }
 
 .text-abount h1{
