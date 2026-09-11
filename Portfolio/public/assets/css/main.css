@@ -140,13 +140,13 @@ header{
     margin-top: 60px;
     align-items: top;
     padding: 25px;
-    gap: 10px;
+    gap: 4rem;
 }
 
 .text-abount{
     background-color: #8109b583;  
     backdrop-filter: opacity(15px);
-    height: 27rem;
+    height: 100%;
     width: 48%;
     padding: 8px;
     border-radius: 25px;
@@ -176,7 +176,7 @@ header{
 .div-skills{
     background-color: #8109b583;  
     backdrop-filter: opacity(15px);
-    height: 27rem;
+    height: 100%;
     width: 48%;
     border-radius: 25px;
 }
@@ -226,5 +226,22 @@ header{
     background-color:rgb(167, 137, 137);
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+}
+
+.flex-contact{
+    justify-content: center;
+    display: flex;
+    background-color: #49225b98;
+    color: #ffffff;
+    backdrop-filter: blur(15px);
+    width: 600px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.text-contact{
+    font-size: 40px;
 }
