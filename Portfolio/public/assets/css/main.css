@@ -205,19 +205,28 @@ header{
     background-color: #49225b98;
     color: #ffffff;
     backdrop-filter: blur(15px);
-    height: 2rem;
-    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    height: 3.5rem;
+    width: 30rem;
     margin-bottom: 50px;
+    font-size: 35px;
 }
 
 .flex-projects{
     background-color: #49225b98;
     color: #ffffff;
     backdrop-filter: blur(15px);
-    width: 600px;
-    height: 350px;
+    width: 55rem;
+    height: 40rem;
     padding: 20px;
     border-radius: 25px;
+}
+
+.img-projects{
+    padding: 20px;
 }
 /* fim estilizaçao projects */
 /* inicio da estilizaçao do  */
