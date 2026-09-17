@@ -124,8 +124,8 @@ header{
 
 .section-abount{
     display: flex;
-    /* background-image: url("../img/fundo\ psp.gif");
-    background-size: cover; */
+    background-image: url("../img/line-purple.jpg");
+    background-size: cover;
     justify-content: center;
     height: 100vh;
 }
@@ -232,14 +232,47 @@ header{
 /* inicio da estilizaçao do  */
 
 .section-contact{
-    background-color:rgb(167, 137, 137);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
+.contact-dad {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    z-index: -2;
+}
+
+.dad-video{
+    display:flex;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    justify-content: start;
+}
+
+.background-video {
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+}
+
+.dad-contact{
+    display:flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
 .flex-contact{
+    position: absolute;
     justify-content: center;
     display: flex;
     background-color: #49225b98;
@@ -249,8 +282,11 @@ header{
     height: 350px;
     padding: 20px;
     border-radius: 25px;
+    z-index: 1;
+    margin-right: 100px;
 }
 
 .text-contact{
     font-size: 40px;
+    z-index: 1;
 }
