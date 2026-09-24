@@ -1,0 +1,22 @@
+*{
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* estilo geral */
+body{
+    /* background-color: rgb(45, 5, 99); */
+    height: 100vh;
+    background-image: url('../img/fundo\ ondas.gif');
+    background-size: cover
+}
+
+.separacao{
+    background: linear-gradient(nulldeg, rgba(0, 0, 0, 0.374) 40%, rgba(109, 2, 217, 0.374) 35%, rgba(120, 10, 194, 0.52) 25%);
+    height: 15vh;
+
+}
