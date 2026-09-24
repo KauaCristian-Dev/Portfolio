@@ -47,18 +47,20 @@ header{
 
 .section-home{
     height: 100vh;
+    background-image: url('../img/fundo\ ondas.gif');
+    background-size: cover;
 }
 
 .text-inicio{
     background-color: #49225b98;
     color: #ffffff;
     backdrop-filter: blur(15px);
-    width: 600px;
-    height: 400px;
-    margin: 100px;
-    margin-right: 120px;
-    margin-left: 200px;
-    padding: 20px;
+    width: 37rem;
+    height: 25rem;
+    margin: 6.25rem;
+    margin-right: 7.5rem;
+    margin-left: 12.5rem;
+    padding: 1.25rem;
     border-radius: 25px;
 }
 
@@ -108,8 +110,9 @@ header{
 
 .section-abount{
     display: flex;
-    background-image: url("../img/line-purple.jpg");
+    background-image: url("../img/onda-psp.gif");
     background-size: cover;
+    background-position: center;
     justify-content: center;
     height: 100vh;
 }
@@ -179,10 +182,15 @@ header{
 
 .section-projects{
     display: flex;
+    background-image: url('../img/projects-line.gif');
+    background-size: 150px 150px;
+    background-size: cover;
+    background-position: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    border-radius: 0px 0px 40px 40px;
 }
 
 .bar-projects{
@@ -215,11 +223,57 @@ header{
 /* fim estilizaçao projects */
 /* inicio da estilizaçao do  */
 
-.section-contact{
+footer {
+    z-index: -1;
+    height: 30vh;
+    background-color: #00000054;
+}
+
+.footer-flex{
+    display:flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
+
+.footer-flex img{
+    height: 85%;
+}
+
+.footer-flex img:hover{
+    transform: translateY(-3px);
+    transition: 0.5s ;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.desenvolvedor-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    color: #ffffff;
+}
+
+.plat-footer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    color: #ffffff;
+}
+
+/* .section-contact{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 35vh;
+    border-radius: 25px;
 }
 
 .contact-dad {
@@ -273,4 +327,4 @@ header{
 .text-contact{
     font-size: 40px;
     z-index: 1;
-}
+} */
