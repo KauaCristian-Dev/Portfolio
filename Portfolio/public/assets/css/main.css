@@ -1,6 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
 /* estiolo do cabeçalho */
-header{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +17,14 @@ header{
     z-index: 9999;
     border-radius: 25px;
     position: fixed;
+    transition: 0.3s;
+}
+
+.header.scrolled{
+    margin-left: 15rem;
+    transition: 0.5s ;
+    height: 30px;
+    width: 65%;
 }
 
 .nav-button{
@@ -65,6 +75,7 @@ header{
 }
 
 .text-inicio h1{
+    font-family: "Fraunces", serif;
     font-size: 35px;
     text-align: center;
 }
@@ -110,8 +121,9 @@ header{
 
 .section-abount{
     display: flex;
-    background-image: url("../img/onda-psp.gif");
-    background-size: cover;
+    /* background-image: url("../img/onda-psp.gif");
+    background-size: cover; */
+    background-color: #000000;
     background-position: center;
     justify-content: center;
     height: 100vh;
@@ -146,6 +158,7 @@ header{
 }
 
 .text-abount h1{
+    font-family: "Fraunces", serif;
     text-align: center;
 }
 .img-meio{
@@ -160,13 +173,85 @@ header{
     animation-delay: calc(var(--i) * 0.5s);
 }
 
-.div-skills{
+.text-skills{
+    display: flex;
+    height: 10%;
+    width: 90%;
+    margin-bottom: 1.25rem;
+    margin-top: 0.50rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-skills h1{
+    font-family: "Fraunces", serif;
+    font-size: 1.5rem;
+    color: #00000083;
+}
+
+.flex-div-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #8109b583;  
     backdrop-filter: opacity(15px);
     height: 100%;
     width: 48%;
+    gap: 0.5rem;
     border-radius: 25px;
 }
+
+.skills-div{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 10%;
+    gap: 0.75rem;
+    align-items: center;
+    border-radius: 10px;
+    border: solid rgb(2, 2, 2) 2px;
+}
+
+.skills-div-img{
+    display: flex;
+    width: 15%;
+    height: 100%;
+
+}
+
+.skills-div-img img{
+    height: 95%;
+    width: 95%;
+}
+
+.skill-bar-js{
+    width: 70%;
+    height: 10%;
+    background-color: #000000;
+    border-radius: 25px;
+}
+
+.skill-bar-html{
+    width: 70%;
+    height: 10%;
+    background-color: #000000;
+    border-radius: 25px;
+}
+
+.skill-bar-postgres{
+    width: 60%;
+    height: 10%;
+    background-color: #000000;
+    border-radius: 25px;
+}
+
+.skill-bar-react{
+    width: 50%;
+    height: 10%;
+    background-color: #000000;
+    border-radius: 25px;
+}
+
 
 @keyframes subirDescer{
     0% {
@@ -182,15 +267,16 @@ header{
 
 .section-projects{
     display: flex;
-    background-image: url('../img/projects-line.gif');
+    /* background-image: url('../img/projects-line.gif');
     background-size: 150px 150px;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #000000;
     background-position: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    border-radius: 0px 0px 40px 40px;
+    /* border-radius: 0px 0px 40px 40px; */
 }
 
 .bar-projects{
@@ -201,32 +287,71 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    height: 3.5rem;
-    width: 30rem;
-    margin-bottom: 50px;
-    font-size: 35px;
+    height: 3rem;
+    width: 25rem;
+    margin-top: 3rem;
+    margin-bottom: 3.125rem;
+    font-size: 2rem;
 }
 
-.flex-projects{
+.flex-projects-dad{
     background-color: #49225b98;
     color: #ffffff;
     backdrop-filter: blur(15px);
-    width: 55rem;
-    height: 40rem;
-    padding: 20px;
+    width: 40rem;
+    height: 20rem;
+    padding: 1.25rem;
     border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-projects{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .img-projects{
-    padding: 20px;
+    width: 12rem;
+    padding: 1rem;
+}
+
+.img-projects img{
+    margin-top: 0;
+    height: 10rem;
+    width: 10rem;
+}
+
+.text-projects{
+    background-color: #8109b583;  
+    backdrop-filter: opacity(15px);
+    width: 95%;
+    height: 40%;
+    border-radius: 25px;
+    padding: 0.75rem;
+    align-items: start;
+}
+
+.flex-abount-projects{
+    background-color: #8109b583;  
+    backdrop-filter: opacity(15px);
+    border-radius: 25px;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.flex-abount-projects p{
+    font-size: larger;
 }
 /* fim estilizaçao projects */
-/* inicio da estilizaçao do  */
+/* inicio da estilizaçao do  */                                                                 
 
 footer {
-    z-index: -1;
     height: 30vh;
-    background-color: #00000054;
+    background-color: #000000;
 }
 
 .footer-flex{
@@ -266,6 +391,11 @@ footer {
     align-items: center;
     width: 50%;
     color: #ffffff;
+}
+
+.plat-footer img{
+    height: 2.3rem;
+    width: 2.3rem;
 }
 
 /* .section-contact{
